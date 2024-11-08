@@ -49,3 +49,6 @@ def TimePeriod(Frequency):
 def Magnification(ImageHeight,ObjectHeight):
     M = ImageHeight/ObjectHeight
     return(M)
+def MagnetForce(MagneticFluxDensity,Current,LengthOfConductorInMagneticFeild):
+    MF = MagneticFluxDensity*Current*LengthOfConductorInMagneticFeild
+    return(MF)
