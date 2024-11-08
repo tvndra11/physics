@@ -59,7 +59,7 @@ def PotentialDifferenceAcrossCoilT(PotentialDiffeneceAcrossCoil2,TurnsInCoil,Tur
 def TurnsAcrossCoil(PotentialDiffeneceAcrossCoil2,PotentialDiffeneceAcrossCoil,TurnsInCoil2):
     TAC = TurnsInCoil2*PotentialDiffeneceAcrossCoil/PotentialDiffeneceAcrossCoil2
     return(TAC) 
-def potentialDifferenceAcrossCoilC(CurrentInCoil,CurrentInCoil2,PotentialDiffeneceAcrossCoil2):
+def PotentialDifferenceAcrossCoilC(CurrentInCoil,CurrentInCoil2,PotentialDiffeneceAcrossCoil2):
     PDAC = CurrentInCoil2*PotentialDiffeneceAcrossCoil2/CurrentInCoil
     return(PDAC)
 def CurrentInCoil(CurrentInCoil2,PotentialDiffeneceAcrossCoil,PotentialDiffeneceAcrossCoil2):
