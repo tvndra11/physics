@@ -88,7 +88,7 @@ def AccelerationC(Time,Change):
     return(A)
 def AccelerationOF(Time,Original,Final):
     A = (Final-Original)/Time
-    returnA=(A)
+    return(A)
 def ResultantForce(Mass,Acceleration):
     RF = Mass*Acceleration
     return(RF)
