@@ -1,3 +1,4 @@
+import math
 def GravitationalPotential(Mass,Height,Grav):
     GPE = Mass*Height*Grav
     return(GPE)
@@ -64,3 +65,42 @@ def potentialDifferenceAcrossCoilC(CurrentInCoil,CurrentInCoil2,PotentialDiffene
 def CurrentInCoil(CurrentInCoil2,PotentialDiffeneceAcrossCoil,PotentialDiffeneceAcrossCoil2):
     CIC = CurrentInCoil2*PotentialDiffeneceAcrossCoil2/PotentialDiffeneceAcrossCoil
     return(CIC)
+def Weight(GravitaionalFeildStrength,Mass):
+    W = GravitaionalFeildStrength*Mass
+    return(W)
+def WorkD(Distance,Force):
+    WD = Distance*Force
+    return(WD)
+def SpringForce(SpringConstant,Extention):
+    SF = SpringConstant*Extention
+    return(SF)
+def MovementOfAForce(Force,Distance):
+    MOAF = Force*Distance
+    return(MOAF)
+def Pressure(ForceNormalToASurface,AreaOfSurface):
+    P = ForceNormalToASurface/AreaOfSurface
+    return(P)
+def DistanceTravelled(Speed,Time):
+    DT = Speed*Time
+    return(DT)
+def AccelerationC(Time,Change):
+    A = Change/Time
+    return(A)
+def AccelerationOF(Time,Original,Final):
+    A = (Final-Original)/Time
+    returnA=(A)
+def ResultantForce(Mass,Acceleration):
+    RF = Mass*Acceleration
+    return(RF)
+def Momentum(Mass,Velocity):
+    M = Mass*Velocity
+    return(M)
+def PressureL(HeightOfColumn,DensityOfLiquid,GravitationalFeildStrength):
+    PL = HeightOfColumn*DensityOfLiquid*GravitationalFeildStrength
+    return(PL)
+def FinalVelocity(InitialVelocity,Acceleration,Distance):
+    FV = math.sqrt(Acceleration*Distance*2+InitialVelocity*InitialVelocity)
+    return(FV)
+def ForceCT(ChangeInMomentum,Time):
+    F = ChangeInMomentum/Time
+    return(F)
