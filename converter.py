@@ -25,10 +25,10 @@ def PowerCPD(Current,PotentialDifference):
 def PowerCR(Current,Resistance):
     P = Current*Current*Resistance
     return(P)
-def EnergyTransferedPT(Power,Time):
+def EnergyTransferredPT(Power,Time):
     ET = Power*Time
     return(ET)
-def EnergyTransferedCFPD(Current,PotentialDifference):
+def EnergyTransferredCPD(Current,PotentialDifference):
     ET = Current*PotentialDifference
     return(ET)
 def Density(Volume,Mass):
@@ -52,3 +52,15 @@ def Magnification(ImageHeight,ObjectHeight):
 def MagnetForce(MagneticFluxDensity,Current,LengthOfConductorInMagneticFeild):
     MF = MagneticFluxDensity*Current*LengthOfConductorInMagneticFeild
     return(MF)
+def PotentialDifferenceAcrossCoilT(PotentialDiffeneceAcrossCoil2,TurnsInCoil,TurnsInCoil2):
+    PDAC = PotentialDiffeneceAcrossCoil2*TurnsInCoil/TurnsInCoil2
+    return(PDAC)
+def TurnsAcrossCoil(PotentialDiffeneceAcrossCoil2,PotentialDiffeneceAcrossCoil,TurnsInCoil2):
+    TAC = TurnsInCoil2*PotentialDiffeneceAcrossCoil/PotentialDiffeneceAcrossCoil2
+    return(TAC) 
+def potentialDifferenceAcrossCoilC(CurrentInCoil,CurrentInCoil2,PotentialDiffeneceAcrossCoil2):
+    PDAC = CurrentInCoil2*PotentialDiffeneceAcrossCoil2/CurrentInCoil
+    return(PDAC)
+def CurrentInCoil(CurrentInCoil2,PotentialDiffeneceAcrossCoil,PotentialDiffeneceAcrossCoil2):
+    CIC = CurrentInCoil2*PotentialDiffeneceAcrossCoil2/PotentialDiffeneceAcrossCoil
+    return(CIC)
